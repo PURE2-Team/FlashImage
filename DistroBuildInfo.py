@@ -301,6 +301,7 @@ def generate1():
 
     FEED_URLS1 = [
         ("OpenViX", "https://www.openvix.co.uk/json/%s", "machinebuild"),
+        ("OpenATV", "https://images.mynonpublic.com/openatv/json/%s", "machinebuild"),
         ("OpenHDF", "https://flash.hdfreaks.cc/openhdf/json/%s", "machinebuild"),
         ("Open8eIGHT", "http://openeight.de/json/%s", "machinebuild"),
         ("OpenDROID", "https://opendroid.org/json/%s", "machinebuild"),
@@ -387,6 +388,7 @@ del machines[0]
 
 FEED_URLS = [
     ("OpenViX", "https://www.openvix.co.uk/json/%s"),
+    ("OpenATV", "https://images.mynonpublic.com/openatv/json/%s"),
     ("OpenHDF", "https://flash.hdfreaks.cc/openhdf/json/%s"),
     ("Open8eIGHT", "http://openeight.de/json/%s"),
     ("OpenDROID", "https://opendroid.org/json/%s"),
