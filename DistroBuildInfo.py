@@ -402,9 +402,16 @@ FEED_URLS = [
 
 FEEDS = []
 
+# FRANC - try everything to lower case()
+# for index, distribution in enumerate(distributions):
+    # for feeds in FEED_URLS:
+        # if feeds[0] == distribution:
+            # FEEDS.append((index, feeds[0], feeds[1]))
+
 for index, distribution in enumerate(distributions):
     for feeds in FEED_URLS:
-        if feeds[0] == distribution:
+        # .strip() miče nevidljive razmake, a .lower() pretvara sve u mala slova
+        if feeds[0].strip().lower() == distribution.strip().lower():
             FEEDS.append((index, feeds[0], feeds[1]))
 
 machine_distros = {}
